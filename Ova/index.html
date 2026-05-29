@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OVA — Introducción a los Computadores</title>
+  <meta name="description" content="Objeto Virtual de Aprendizaje sobre fundamentos, historia, arquitectura y componentes de los computadores."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="reading-progress"></div>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      Computadores
+      <span>OVA</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#conceptos">Fundamentos</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#arquitectura">Arquitectura</a></li>
+      <li><a href="#componentes">Componentes</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#glosario">Glosario</a></li>
+    </ul>
+    <a href="quiz.html" class="nav-quiz-btn">Evaluación →</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-main">
+      <span class="hero-kicker">Objeto Virtual de Aprendizaje · Tecnología e Informática</span>
+      <h1>Introducción a los <em>Computadores</em></h1>
+      <p class="hero-lead">
+        Los computadores son las máquinas más transformadoras de la historia reciente. Desde los
+        primeros tubos de vacío hasta los procesadores de varios nanómetros actuales, este OVA
+        recorre la arquitectura, los componentes, la historia y el funcionamiento de los sistemas
+        informáticos de forma clara y rigurosa.
+      </p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Nivel</span>
+          <span class="hero-meta-val">Introducción</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Secciones</span>
+          <span class="hero-meta-val">6 módulos</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Evaluación</span>
+          <span class="hero-meta-val">12 preguntas</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Área</span>
+          <span class="hero-meta-val">Informática</span>
+        </div>
+      </div>
+    </div>
+    <aside class="hero-aside">
+      <div class="toc-card">
+        <h4>Contenido del OVA</h4>
+        <ul class="toc-list">
+          <li><a href="#conceptos"><span class="toc-num">01</span>Fundamentos del computador</a></li>
+          <li><a href="#historia"><span class="toc-num">02</span>Historia y evolución</a></li>
+          <li><a href="#arquitectura"><span class="toc-num">03</span>Arquitectura Von Neumann</a></li>
+          <li><a href="#componentes"><span class="toc-num">04</span>Componentes del hardware</a></li>
+          <li><a href="#videos"><span class="toc-num">05</span>Videos de apoyo</a></li>
+          <li><a href="#glosario"><span class="toc-num">06</span>Glosario de términos</a></li>
+          <li><a href="quiz.html"><span class="toc-num">✓</span>Evaluación</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- ══ STATS ══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="grid-4 reveal">
+      <div class="stat-card">
+        <div class="stat-number">1971</div>
+        <div class="stat-label">Año del primer microprocesador comercial (Intel 4004)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3 nm</div>
+        <div class="stat-label">Proceso de fabricación de los chips más avanzados actuales</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">~100B</div>
+        <div class="stat-label">Instrucciones por segundo que ejecuta un CPU moderno de gama alta</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">8</div>
+        <div class="stat-label">Bits que conforman un byte, la unidad básica de información digital</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ SECCIÓN 1 — CONCEPTOS ══ -->
+<section class="section" id="conceptos">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-kicker">01 — Fundamentos</span>
+      <h2>¿Qué es un computador?</h2>
+      <p>Un computador es una máquina electrónica capaz de recibir datos (entrada), procesarlos de acuerdo con un conjunto de instrucciones (programa), almacenar los resultados y producir una salida. Su característica definitoria es la programabilidad: puede ejecutar distintas tareas según las instrucciones que reciba.</p>
+    </div>
+
+    <div class="two-col-text reveal">
+      <p>El término "computador" proviene del latín <em>computare</em> (calcular). Históricamente, los primeros "computadores" eran personas que realizaban cálculos matemáticos a mano. Con la Revolución Industrial y el desarrollo de la electrónica, el término migró a las máquinas automáticas capaces de hacer ese trabajo miles de veces más rápido.</p>
+      <p>Un computador moderno es, en esencia, un sistema que manipula información codificada en formato binario. Todo lo que vemos en pantalla —texto, imágenes, audio, video— es en último término una secuencia de ceros y unos interpretados por el hardware y el software del sistema. Esta abstracción, desde el transistor hasta la interfaz gráfica, es una de las ingenierías más elaboradas que el ser humano ha construido.</p>
+      <p>La potencia de los computadores actuales proviene de la miniaturización extrema: un chip moderno contiene miles de millones de transistores en un área menor que la uña del pulgar. Cada transistor actúa como un interruptor electrónico que puede estar "abierto" (0) o "cerrado" (1), y la combinación de millones de estos estados genera toda la riqueza de la computación moderna.</p>
+    </div>
+
+    <div class="info-box reveal mt-2">
+      <span class="info-box-label">Definición formal</span>
+      <p>Un computador es un sistema electrónico digital que procesa información de manera automática bajo el control de un programa almacenado en memoria, siguiendo la arquitectura de Von Neumann: unidad de entrada, unidad de procesamiento, memoria y unidad de salida.</p>
+    </div>
+
+    <h3 class="mt-3 reveal" style="font-size:1.2rem;margin-bottom:1.5rem">Clasificación de los computadores</h3>
+    <div class="grid-3 reveal">
+      <div class="card card-accent-top">
+        <div class="card-icon">💻</div>
+        <h3>Computadores personales</h3>
+        <p>Diseñados para uso individual. Incluyen desktops (de escritorio), laptops y workstations. Equilibran potencia, costo y accesibilidad para el usuario común y profesional.</p>
+      </div>
+      <div class="card card-accent-top">
+        <div class="card-icon">🖥</div>
+        <h3>Servidores</h3>
+        <p>Computadores de alto rendimiento diseñados para operar ininterrumpidamente y servir recursos a múltiples usuarios o dispositivos. Priorizan fiabilidad y capacidad de almacenamiento.</p>
+      </div>
+      <div class="card card-accent-top">
+        <div class="card-icon">🦾</div>
+        <h3>Supercomputadores</h3>
+        <p>Sistemas de cálculo extremo usados en simulaciones científicas, modelado climático, investigación nuclear y desarrollo de IA. El más potente alcanza quintillones de operaciones por segundo.</p>
+      </div>
+      <div class="card card-accent-gold">
+        <div class="card-icon" style="background:var(--gold-lt)">📱</div>
+        <h3>Dispositivos móviles</h3>
+        <p>Smartphones y tablets son computadores completos en formato miniaturizado. Usan procesadores ARM de bajo consumo y sistemas operativos optimizados para pantallas táctiles.</p>
+      </div>
+      <div class="card card-accent-gold">
+        <div class="card-icon" style="background:var(--gold-lt)">🔧</div>
+        <h3>Sistemas embebidos</h3>
+        <p>Computadores integrados en dispositivos cotidianos: autos, electrodomésticos, instrumentos médicos. Están optimizados para una función específica y operan en tiempo real.</p>
+      </div>
+      <div class="card card-accent-green">
+        <div class="card-icon" style="background:var(--green-lt)">☁️</div>
+        <h3>Computación en la nube</h3>
+        <p>Infraestructura de centros de datos masivos que proporcionan capacidad de cómputo y almacenamiento como servicio a través de internet, eliminando la necesidad de hardware local.</p>
+      </div>
+    </div>
+
+    <h3 class="mt-3 reveal" style="font-size:1.2rem;margin-bottom:1rem">Hardware vs. Software</h3>
+    <div class="grid-2 reveal">
+      <div class="info-box">
+        <span class="info-box-label">Hardware</span>
+        <p>Conjunto de componentes físicos y tangibles del computador: procesador, memoria, disco duro, placa madre, monitor, teclado, ratón y todo dispositivo que se puede tocar. Sin software, el hardware no es más que metal y silicio.</p>
+      </div>
+      <div class="info-box" style="border-color:var(--accent2);background:var(--accent2-lt)">
+        <span class="info-box-label" style="color:var(--accent2)">Software</span>
+        <p>Conjunto de programas, instrucciones y datos que dirigen al hardware para realizar tareas específicas. Se divide en software de sistema (sistema operativo, controladores) y software de aplicación (navegadores, editores, juegos).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ SECCIÓN 2 — HISTORIA ══ -->
+<section class="section section-alt" id="historia">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-kicker">02 — Historia</span>
+      <h2>Evolución histórica del computador</h2>
+      <p>La historia de la computación abarca siglos de ideas matemáticas, décadas de ingeniería electrónica y años de innovación en software. Conocer esta evolución permite entender por qué los computadores son como son hoy.</p>
+    </div>
+
+    <h3 class="reveal" style="font-size:1.1rem;margin-bottom:1.5rem;color:var(--ink3)">Generaciones de los computadores</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Generación</th>
+            <th>Período</th>
+            <th>Tecnología base</th>
+            <th>Características</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1ª</strong></td><td>1940–1956</td><td>Tubos de vacío</td><td>Enormes, lentos, muy costosos, calentaban mucho</td><td>ENIAC, UNIVAC I</td></tr>
+          <tr><td><strong>2ª</strong></td><td>1956–1963</td><td>Transistores</td><td>Más pequeños y confiables, lenguajes de alto nivel</td><td>IBM 7090, CDC 1604</td></tr>
+          <tr><td><strong>3ª</strong></td><td>1963–1971</td><td>Circuitos integrados</td><td>Menor tamaño, mayor velocidad, multiprogramación</td><td>IBM System/360</td></tr>
+          <tr><td><strong>4ª</strong></td><td>1971–presente</td><td>Microprocesadores</td><td>Computador personal, GUI, internet</td><td>Apple II, IBM PC</td></tr>
+          <tr><td><strong>5ª</strong></td><td>Presente</td><td>IA y computación cuántica</td><td>Aprendizaje automático, procesamiento masivo en paralelo</td><td>GPU clusters, QPU</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2 mt-2" style="gap:3rem;align-items:start">
+      <div>
+        <h3 class="reveal" style="font-size:1.1rem;margin-bottom:1.5rem">Hitos fundamentales</h3>
+        <div class="timeline reveal">
+          <div class="tl-item">
+            <div class="tl-year">1837</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>Máquina Analítica — Babbage</h4><p>Charles Babbage diseña el primer concepto de computador mecánico de propósito general con memoria y unidad aritmética separadas.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1843</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>Ada Lovelace — primer algoritmo</h4><p>Ada Lovelace publica el primer algoritmo diseñado para ejecutarse en una máquina, considerada la primera programadora de la historia.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1936</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>Máquina de Turing</h4><p>Alan Turing formaliza el concepto de algoritmo y computabilidad, sentando las bases matemáticas de toda la computación moderna.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1945</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>ENIAC y arquitectura Von Neumann</h4><p>Se construye el primer computador electrónico de propósito general. Von Neumann publica su arquitectura de programa almacenado.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1958</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>Circuito Integrado</h4><p>Jack Kilby (Texas Instruments) fabrica el primer circuito integrado, permitiendo miniaturizar lo que antes ocupaba armarios enteros.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1971</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>Intel 4004 — primer microprocesador</h4><p>Intel lanza el 4004, el primer microprocesador comercial en un solo chip: 2,300 transistores a 740 kHz en proceso de 10 μm.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1984</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>Apple Macintosh — la GUI masiva</h4><p>Apple populariza la interfaz gráfica de usuario con ratón, haciendo los computadores accesibles para personas sin formación técnica.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">1991</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>World Wide Web pública</h4><p>Tim Berners-Lee abre la web al público, transformando los computadores en nodos de una red mundial de información.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2022</div>
+            <div class="tl-dot-col"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-content"><h4>IA Generativa masiva</h4><p>Los grandes modelos de lenguaje e imagen marcan una nueva era en la interacción humano-máquina.</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="reveal" style="font-size:1.1rem;margin-bottom:1rem">La Ley de Moore</h3>
+        <p class="reveal" style="font-size:0.9rem;color:var(--ink2)">
+          En 1965, Gordon Moore (cofundador de Intel) observó que el número de transistores en un chip se duplicaba aproximadamente cada 18-24 meses, manteniendo el mismo costo de producción. Esta predicción, conocida como la Ley de Moore, se convirtió en la hoja de ruta de la industria semiconductora durante casi 50 años.
+        </p>
+        <div class="info-box gold reveal mt-1">
+          <span class="info-box-label">Ley de Moore en números</span>
+          <p>Intel 4004 (1971): 2,300 transistores. Apple M3 Max (2023): 92,000,000,000 transistores. Un incremento de 40 millones de veces en 52 años.</p>
+        </div>
+        <p class="reveal mt-1" style="font-size:0.9rem;color:var(--ink2)">
+          Actualmente la Ley de Moore está desacelerándose debido a los límites físicos de la miniaturización: cuando los transistores alcanzan dimensiones de apenas unos pocos átomos, los efectos cuánticos como el efecto túnel degradan su funcionamiento. La industria responde con diseños de múltiples núcleos, chiplets (módulos interconectados) y nuevas arquitecturas como ARM y RISC-V.
+        </p>
+
+        <h3 class="reveal mt-2" style="font-size:1.1rem;margin-bottom:1rem">Pioneros de la computación</h3>
+        <div class="grid-2 reveal" style="gap:1rem">
+          <div class="card" style="padding:1.2rem">
+            <h4 style="font-size:0.9rem">Alan Turing</h4>
+            <p style="font-size:0.82rem">Padre teórico de la computación. Ideó la máquina de Turing (1936) y el test de Turing para evaluar la inteligencia artificial.</p>
+          </div>
+          <div class="card" style="padding:1.2rem">
+            <h4 style="font-size:0.9rem">John von Neumann</h4>
+            <p style="font-size:0.82rem">Diseñó en 1945 la arquitectura de programa almacenado que sigue siendo la base de casi todos los computadores modernos.</p>
+          </div>
+          <div class="card" style="padding:1.2rem">
+            <h4 style="font-size:0.9rem">Grace Hopper</h4>
+            <p style="font-size:0.82rem">Inventó el primer compilador (1952) y contribuyó al desarrollo del lenguaje COBOL, pionera en software de alto nivel.</p>
+          </div>
+          <div class="card" style="padding:1.2rem">
+            <h4 style="font-size:0.9rem">Dennis Ritchie</h4>
+            <p style="font-size:0.82rem">Creó el lenguaje C y codesarrolló el sistema operativo Unix, pilares de la programación moderna.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ SECCIÓN 3 — ARQUITECTURA ══ -->
+<section class="section" id="arquitectura">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-kicker">03 — Arquitectura</span>
+      <h2>Arquitectura Von Neumann</h2>
+      <p>La gran mayoría de los computadores modernos siguen el modelo propuesto por John von Neumann en 1945: un sistema con memoria compartida para datos e instrucciones, un procesador y unidades de entrada/salida.</p>
+    </div>
+
+    <div class="grid-2 reveal" style="gap:2.5rem;align-items:start">
+      <div>
+        <p style="font-size:0.93rem;color:var(--ink2)">
+          La arquitectura Von Neumann describe un computador compuesto por cuatro subsistemas fundamentales que se comunican a través de buses de datos:
+        </p>
+        <div class="info-box green mt-1">
+          <span class="info-box-label">Unidad Central de Procesamiento (CPU)</span>
+          <p>Contiene la Unidad Aritmético-Lógica (ALU) que realiza cálculos, y la Unidad de Control (UC) que decodifica y ejecuta instrucciones.</p>
+        </div>
+        <div class="info-box mt-1">
+          <span class="info-box-label">Memoria principal (RAM)</span>
+          <p>Almacena tanto las instrucciones del programa como los datos que procesa. La CPU accede a ella constantemente durante la ejecución.</p>
+        </div>
+        <div class="info-box gold mt-1">
+          <span class="info-box-label">Unidades de Entrada/Salida</span>
+          <p>Permiten la comunicación con el mundo exterior: teclado, ratón, monitor, disco duro, impresora, red y cualquier periférico.</p>
+        </div>
+        <div class="info-box" style="border-color:var(--accent2);background:var(--accent2-lt);margin-top:1rem">
+          <span class="info-box-label" style="color:var(--accent2)">Bus de sistema</span>
+          <p>Canal de comunicación que interconecta todos los componentes. Se divide en bus de datos, bus de direcciones y bus de control.</p>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem;margin-bottom:1rem" class="reveal">El ciclo Fetch-Decode-Execute</h3>
+        <p class="reveal" style="font-size:0.9rem;color:var(--ink2)">El procesador repite este ciclo continuamente para ejecutar programas:</p>
+        <div class="reveal" style="display:flex;flex-direction:column;gap:0.8rem;margin-top:1rem">
+          <div class="card" style="padding:1rem;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;border-top:none;border-bottom:none;border-right:1px solid var(--border)">
+            <h4 style="font-size:0.88rem;color:var(--accent);margin-bottom:4px">1. Fetch (Búsqueda)</h4>
+            <p style="font-size:0.83rem;margin:0">La CPU lee la próxima instrucción desde la RAM usando el Contador de Programa (PC) como referencia de dirección.</p>
+          </div>
+          <div class="card" style="padding:1rem;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;border-top:none;border-bottom:none;border-right:1px solid var(--border)">
+            <h4 style="font-size:0.88rem;color:var(--gold);margin-bottom:4px">2. Decode (Decodificación)</h4>
+            <p style="font-size:0.83rem;margin:0">La Unidad de Control interpreta la instrucción y determina qué operación debe realizarse y sobre qué datos.</p>
+          </div>
+          <div class="card" style="padding:1rem;border-left:3px solid var(--green);border-radius:0 8px 8px 0;border-top:none;border-bottom:none;border-right:1px solid var(--border)">
+            <h4 style="font-size:0.88rem;color:var(--green);margin-bottom:4px">3. Execute (Ejecución)</h4>
+            <p style="font-size:0.83rem;margin:0">La ALU realiza la operación (suma, comparación, movimiento de datos) y almacena el resultado en registros o en memoria.</p>
+          </div>
+        </div>
+
+        <h3 style="font-size:1.05rem;margin:1.5rem 0 1rem" class="reveal">Jerarquía de memoria</h3>
+        <p class="reveal" style="font-size:0.88rem;color:var(--ink2);margin-bottom:1rem">Los computadores usan múltiples niveles de memoria: cuanto más rápida, más pequeña y costosa.</p>
+        <div class="table-wrap reveal">
+          <table>
+            <thead><tr><th>Nivel</th><th>Tipo</th><th>Velocidad</th><th>Tamaño típico</th></tr></thead>
+            <tbody>
+              <tr><td>Registros CPU</td><td>Flip-flops</td><td>&lt; 1 ns</td><td>Bytes (32–256)</td></tr>
+              <tr><td>Caché L1/L2/L3</td><td>SRAM</td><td>1–15 ns</td><td>KB – MB</td></tr>
+              <tr><td>RAM principal</td><td>DRAM</td><td>~50–100 ns</td><td>GB</td></tr>
+              <tr><td>Almacenamiento SSD</td><td>NAND Flash</td><td>~100 μs</td><td>GB – TB</td></tr>
+              <tr><td>Almacenamiento HDD</td><td>Disco magnético</td><td>~10 ms</td><td>TB</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ SECCIÓN 4 — COMPONENTES ══ -->
+<section class="section section-alt" id="componentes">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-kicker">04 — Componentes</span>
+      <h2>Hardware: partes del computador</h2>
+      <p>Explora cada componente principal del sistema. Selecciona un elemento de la lista para conocer su función, especificaciones técnicas y datos de interés.</p>
+    </div>
+
+    <div class="comp-layout reveal">
+      <div class="comp-nav" id="compNav"></div>
+      <div class="comp-panel" id="compPanel">
+        <p style="color:var(--ink4);font-size:0.9rem">Selecciona un componente de la lista para ver su descripción detallada.</p>
+      </div>
+    </div>
+
+    <div class="info-box green mt-3 reveal">
+      <span class="info-box-label">Para recordar</span>
+      <p>Los componentes no trabajan de manera aislada. La velocidad de un sistema está determinada por el componente más lento de la cadena: un procesador ultrarrápido con poca RAM o un SSD lento verá limitado su rendimiento. Esta restricción se conoce como "cuello de botella" (bottleneck).</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ SECCIÓN 5 — VIDEOS ══ -->
+<section class="section" id="videos">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-kicker">05 — Material audiovisual</span>
+      <h2>Videos de apoyo</h2>
+      <p>Recursos audiovisuales seleccionados para complementar el contenido escrito del OVA. Se recomienda ver los videos en orden para una comprensión progresiva.</p>
+    </div>
+
+    <div class="grid-2 reveal">
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/AkFi90lZmXA" title="¿Cómo funciona un computador?" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <h4>¿Cómo funciona un computador?</h4>
+          <p>Introducción visual y accesible al funcionamiento interno de un computador. Cubre los conceptos básicos de hardware, software y procesamiento de datos.</p>
+          <div class="video-tags">
+            <span class="tag blue">Básico</span>
+            <span class="tag">Recomendado primero</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/jxILgd5RMtE" title="Arquitectura de computadores" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <h4>Arquitectura Von Neumann explicada</h4>
+          <p>Explicación detallada del modelo arquitectónico que define el diseño de casi todos los computadores modernos: CPU, memoria y buses de datos.</p>
+          <div class="video-tags">
+            <span class="tag blue">Intermedio</span>
+            <span class="tag">Arquitectura</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/RU1u-js7db8" title="Historia de la computación" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <h4>Historia de la computación</h4>
+          <p>Recorrido por la evolución de los computadores desde las máquinas de tubos de vacío hasta los microprocesadores actuales con miles de millones de transistores.</p>
+          <div class="video-tags">
+            <span class="tag green">Historia</span>
+            <span class="tag">Documental</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/5f3NJnvnk7k" title="CPU vs GPU" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <h4>CPU vs GPU — diferencias y usos</h4>
+          <p>Análisis comparativo entre procesadores centrales y tarjetas gráficas: cómo procesan la información de manera diferente y por qué la GPU es clave para la IA moderna.</p>
+          <div class="video-tags">
+            <span class="tag blue">Intermedio</span>
+            <span class="tag violet">IA & GPU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ SECCIÓN 6 — GLOSARIO ══ -->
+<section class="section section-alt" id="glosario">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-kicker">06 — Referencia</span>
+      <h2>Glosario de términos</h2>
+      <p>Definiciones concisas de los conceptos y acrónimos más importantes del área de la informática y los computadores.</p>
+    </div>
+
+    <div class="gloss-grid reveal">
+      <div class="gloss-item"><span class="gloss-term">ALU</span><span class="gloss-def">Arithmetic Logic Unit. Circuito dentro de la CPU que realiza operaciones aritméticas y lógicas sobre datos binarios.</span></div>
+      <div class="gloss-item"><span class="gloss-term">BIOS / UEFI</span><span class="gloss-def">Firmware que inicializa el hardware al encender el computador y carga el sistema operativo desde el almacenamiento.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Bit</span><span class="gloss-def">Binary Digit. La mínima unidad de información digital. Puede ser 0 o 1, equivalente al estado abierto/cerrado de un transistor.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Byte</span><span class="gloss-def">Unidad de almacenamiento equivalente a 8 bits. Un carácter ASCII ocupa 1 byte; 1 KB = 1,024 bytes.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Caché</span><span class="gloss-def">Memoria ultrarrápida integrada en la CPU (L1, L2, L3) que guarda datos de uso frecuente para reducir accesos a la RAM.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Chipset</span><span class="gloss-def">Conjunto de circuitos en la placa madre que gestiona la comunicación entre CPU, RAM, almacenamiento y periféricos.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Compilador</span><span class="gloss-def">Programa que traduce código fuente escrito en lenguaje de alto nivel (C, Python) a código máquina ejecutable por el procesador.</span></div>
+      <div class="gloss-item"><span class="gloss-term">CPU</span><span class="gloss-def">Central Processing Unit. Unidad que ejecuta las instrucciones de los programas. Contiene ALU, Unidad de Control y registros.</span></div>
+      <div class="gloss-item"><span class="gloss-term">DDR5</span><span class="gloss-def">Double Data Rate 5. Quinta generación de memoria RAM. Ofrece el doble de ancho de banda que DDR4 a menor voltaje.</span></div>
+      <div class="gloss-item"><span class="gloss-term">GPU</span><span class="gloss-def">Graphics Processing Unit. Procesador con miles de núcleos para cálculo paralelo. Esencial en gráficos, video e inteligencia artificial.</span></div>
+      <div class="gloss-item"><span class="gloss-term">HDD</span><span class="gloss-def">Hard Disk Drive. Unidad de almacenamiento magnético con platos giratorios. Alta capacidad, bajo costo, pero lento respecto a SSD.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Kernel</span><span class="gloss-def">Núcleo del sistema operativo. Gestiona directamente el hardware, la memoria y los procesos en ejecución.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Latencia</span><span class="gloss-def">Tiempo de retardo entre una solicitud y su respuesta. En memoria, es el tiempo que tarda la RAM en entregar datos a la CPU.</span></div>
+      <div class="gloss-item"><span class="gloss-term">NVMe</span><span class="gloss-def">Non-Volatile Memory Express. Protocolo de comunicación para SSD conectados por PCIe, mucho más rápido que SATA.</span></div>
+      <div class="gloss-item"><span class="gloss-term">PCIe</span><span class="gloss-def">Peripheral Component Interconnect Express. Bus de alta velocidad que conecta GPU, SSD y otras tarjetas de expansión a la placa madre.</span></div>
+      <div class="gloss-item"><span class="gloss-term">RAM</span><span class="gloss-def">Random Access Memory. Memoria volátil de trabajo. Almacena temporalmente datos y programas activos para acceso ultrarrápido por la CPU.</span></div>
+      <div class="gloss-item"><span class="gloss-term">ROM</span><span class="gloss-def">Read Only Memory. Memoria no volátil de solo lectura. Contiene firmware permanente del sistema como el BIOS/UEFI.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Sistema Operativo</span><span class="gloss-def">Software base (Windows, Linux, macOS) que administra el hardware y proporciona una interfaz entre el usuario y la máquina.</span></div>
+      <div class="gloss-item"><span class="gloss-term">SSD</span><span class="gloss-def">Solid State Drive. Almacenamiento no volátil basado en memoria flash NAND. Sin partes móviles, mucho más rápido que los HDD.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Transistor</span><span class="gloss-def">Componente semiconductor que actúa como interruptor electrónico. Millones de ellos conforman los chips modernos.</span></div>
+      <div class="gloss-item"><span class="gloss-term">TDP</span><span class="gloss-def">Thermal Design Power. Potencia en vatios que disipa un procesador bajo carga típica. Determina los requerimientos de refrigeración.</span></div>
+      <div class="gloss-item"><span class="gloss-term">Von Neumann</span><span class="gloss-def">Arquitectura de computador (1945) con memoria unificada para instrucciones y datos, CPU y E/S. Base de casi todos los PC modernos.</span></div>
+    </div>
+
+    <!-- CTA EVALUACIÓN -->
+    <div class="mt-3 reveal" style="text-align:center;padding:3rem 2rem;background:var(--accent-lt);border:1px solid #c5d3ef;border-radius:12px">
+      <span class="section-kicker" style="display:block;text-align:center">Evaluación del OVA</span>
+      <h2 style="font-size:1.8rem;margin-bottom:0.8rem">¿Listo para evaluarte?</h2>
+      <p style="color:var(--ink3);max-width:500px;margin:0 auto 1.8rem">Pon a prueba tu comprensión del material con 12 preguntas que cubren todos los módulos de este OVA.</p>
+      <a href="quiz.html" class="btn btn-primary" style="font-size:1rem;padding:14px 36px">Ir a la evaluación →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">OVA — Introducción a los Computadores</span>
+    <p>Objeto Virtual de Aprendizaje · Tecnología e Informática · 2025</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

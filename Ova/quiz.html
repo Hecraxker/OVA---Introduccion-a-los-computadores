@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evaluación — OVA Computadores</title>
+  <meta name="description" content="Evaluación del OVA Introducción a los Computadores. 12 preguntas de selección múltiple."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="reading-progress"></div>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      Computadores
+      <span>OVA</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#conceptos">Fundamentos</a></li>
+      <li><a href="index.html#historia">Historia</a></li>
+      <li><a href="index.html#arquitectura">Arquitectura</a></li>
+      <li><a href="index.html#componentes">Componentes</a></li>
+      <li><a href="index.html#videos">Videos</a></li>
+      <li><a href="index.html#glosario">Glosario</a></li>
+    </ul>
+    <a href="quiz.html" class="nav-quiz-btn active-page">Evaluación</a>
+  </div>
+</nav>
+
+<header class="quiz-hero">
+  <div class="quiz-hero-inner">
+    <nav class="breadcrumb">
+      <a href="index.html">Inicio</a>
+      <span>›</span>
+      <span>Evaluación</span>
+    </nav>
+    <span class="section-kicker" style="display:block;margin-top:0.8rem">Evaluación sumativa · OVA</span>
+    <h1>Evaluación final</h1>
+    <p>
+      12 preguntas de selección múltiple que cubren los módulos de Fundamentos, Historia,
+      Arquitectura y Componentes del computador. Lee cada pregunta con cuidado antes de responder.
+      Recibirás retroalimentación inmediata en cada respuesta.
+    </p>
+
+    <!-- instrucciones -->
+    <div class="quiz-instructions">
+      <div class="qi-item">
+        <span class="qi-icon">📋</span>
+        <div>
+          <strong>12 preguntas</strong>
+          <p>Selección múltiple con una sola respuesta correcta por pregunta.</p>
+        </div>
+      </div>
+      <div class="qi-item">
+        <span class="qi-icon">💬</span>
+        <div>
+          <strong>Retroalimentación</strong>
+          <p>Al responder verás si fue correcto o no, con una explicación del tema.</p>
+        </div>
+      </div>
+      <div class="qi-item">
+        <span class="qi-icon">🔁</span>
+        <div>
+          <strong>Sin límite de intentos</strong>
+          <p>Puedes reiniciar la evaluación las veces que necesites.</p>
+        </div>
+      </div>
+      <div class="qi-item">
+        <span class="qi-icon">📊</span>
+        <div>
+          <strong>Resultado detallado</strong>
+          <p>Al finalizar verás tu puntaje, porcentaje y una valoración del desempeño.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══ QUIZ ══ -->
+<main class="quiz-layout">
+
+  <!-- barra de progreso -->
+  <div class="quiz-progress-wrap">
+    <div class="quiz-progress-bar-bg">
+      <div class="quiz-progress-fill" id="quizProgressFill" style="width:0%"></div>
+    </div>
+    <span class="quiz-progress-label" id="quizProgressLabel">Pregunta 1 de 12</span>
+  </div>
+
+  <!-- card dinámica: aquí va la pregunta o el resultado -->
+  <div class="quiz-card-main" id="quizCard">
+    <!-- renderizado por main.js -->
+  </div>
+
+  <!-- referencia rápida -->
+  <div class="quiz-ref-panel">
+    <h4 class="quiz-ref-title">Referencia rápida</h4>
+    <p class="quiz-ref-intro">
+      Si necesitas repasar algún concepto antes de responder, consulta estos módulos del OVA:
+    </p>
+    <ul class="quiz-ref-list">
+      <li>
+        <a href="index.html#conceptos">Fundamentos del computador</a>
+        <span>Hardware, software, tipos de computador</span>
+      </li>
+      <li>
+        <a href="index.html#historia">Historia y evolución</a>
+        <span>Generaciones, pioneros, Ley de Moore</span>
+      </li>
+      <li>
+        <a href="index.html#arquitectura">Arquitectura Von Neumann</a>
+        <span>Ciclo fetch-decode-execute, jerarquía de memoria</span>
+      </li>
+      <li>
+        <a href="index.html#componentes">Componentes del hardware</a>
+        <span>CPU, RAM, SSD, GPU, placa madre, PSU</span>
+      </li>
+      <li>
+        <a href="index.html#glosario">Glosario de términos</a>
+        <span>Definiciones de todos los términos técnicos</span>
+      </li>
+    </ul>
+  </div>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">OVA — Introducción a los Computadores</span>
+    <p>Objeto Virtual de Aprendizaje · Tecnología e Informática · 2025</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
